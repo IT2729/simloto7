@@ -26,6 +26,7 @@ setup(
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
             'simloto7 = mypkg.simloto7:main',
+            'result = mypkg.result:main',
         ],
     },
 )
