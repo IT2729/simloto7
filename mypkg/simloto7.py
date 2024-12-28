@@ -7,10 +7,10 @@ import numpy as np
 rng = np.random.default_rng()
 
 
-class loto7(Node):
+class SimLoto7(Node):
     def __init__(self):
-        super().__init__("loto7")
-        self.pub = self.create_publisher(String, "loto7", 10)
+        super().__init__("simloto7")
+        self.pub = self.create_publisher(String, "simloto7", 10)
         self.num_of_trials = 10000
         self.n = 0
         self.total_cost = 0
@@ -48,5 +48,5 @@ class loto7(Node):
 
 def main():
     rclpy.init()
-    node = loto7()
+    node = SimLoto7()
     rclpy.spin(node)
