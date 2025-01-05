@@ -1,5 +1,7 @@
 name: test
+
 on: push
+
 jobs:
   test:
     runs-on: ubuntu-22.04
@@ -9,6 +11,7 @@ jobs:
         python-version: ["3.12"]
 
     steps:
+      - uses: actions/checkout@v2
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/simloto7/
