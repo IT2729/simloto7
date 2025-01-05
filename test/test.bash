@@ -71,6 +71,13 @@ t_num=10
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $13}')
 [ "${out}" = "回収率:" ] || error
 
+# 出力内容確認10(test11)
+t_num=11
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $14}')
+recovery_rate=$(echo ${out%％,})
+out=$(echo ${out} | grep '％,')
+[ "${out}" = "" ] && error
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
