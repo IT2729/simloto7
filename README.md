@@ -3,7 +3,7 @@
 <a href="https://github.com/IT2729/simloto7_ros2/tree/main?tab=BSD-3-Clause-1-ov-file"><img alt="GitHub License" src="https://img.shields.io/github/license/IT2729/simloto7_ros2"></a>
 
 ## Description
-LOTO7をシミュレートし、結果をパブリッシュするROS2パッケージです。
+<a href="https://www.takarakuji-official.jp/kuji/loto/loto7/">LOTO7</a>をシミュレートし、結果をパブリッシュするROS2パッケージです。
 
 ## Requirement
 - ROS 2 Jazzy Jalisco
@@ -13,7 +13,7 @@ LOTO7をシミュレートし、結果をパブリッシュするROS2パッケ�
 
 ## Nodes
 ### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/simloto7/simloto7.py">simloto7</a>
-<a href="https://www.takarakuji-official.jp/kuji/loto/loto7/">LOTO7</a>を指定された回数分シミュレートして結果をパブリッシュするノードです。メッセージ内容は購入金額、購入口数、当選金額、収支、回収率、1等当選回数の6項目です。デフォルトの当選金額は理論値を基にしています。
+LOTO7を指定された回数分シミュレートして結果をパブリッシュするノードです。メッセージ内容は購入金額、購入口数、当選金額、収支、回収率、1等当選回数の6項目です。デフォルトの当選金額は理論値を基にしています。
 
 #### Subscribed topic
 - loto7
