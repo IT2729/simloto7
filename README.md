@@ -12,14 +12,14 @@
     - NumPy 2.1.3 or later
 
 ## Nodes
-### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/simloto7/simloto7.py">simloto7</a>
+### simloto7
 LOTO7を指定された回数分シミュレートして結果をパブリッシュするノードです。メッセージ内容は購入金額、購入口数、当選金額、収支、回収率、1等当選回数の6項目です。デフォルトの当選金額は理論値を基にしています。
 
 #### Subscribed topic
 - loto7
     - LOTO7シミュレート結果
 
-#### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/config/params.yaml">Parameters</a>
+#### Parameters
 
 |Name                    | Description              | Type | Default   |
 |------------------------|--------------------------|------|-----------|
@@ -45,7 +45,7 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
 | prize_money_of_eighth  | 8等当選金額              | int  | 0         |
 | prize_money_of_ninth   | 9等当選金額              | int  | 0         |
 
-### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/simloto7/test_subscriber.py">test_subscriber</a>
+### test_subscriber
 テスト用ノードです。
 
 ## Usage
