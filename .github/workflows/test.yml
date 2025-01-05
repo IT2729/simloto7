@@ -6,15 +6,15 @@ jobs:
   test:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
-
     steps:
+      - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.12'
 
       - name: Build and test
-        uses: actions/checkout@v4
         run: |
           rsync -av ./ /root/ros2_ws/src/simloto7/
           cd /root/ros2_ws
