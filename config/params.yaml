@@ -1,0 +1,20 @@
+simloto7:
+  ros2__parameters:
+    num_of_trials:
+    price:
+    total_num:
+    num_of_first_prize:
+    num_of_second_prize:
+    num_of_third_prize:
+    num_of_fourth_prize:
+    num_of_fifth_prize:
+    num_of_sixth_prize:
+    num_of_seventh_prize:
+    prize_of_first_prize:
+    prize_of_second_prize:
+    prize_of_third_prize:
+    prize_of_fourth_prize:
+    prize_of_fifth_prize:
+    prize_of_sixth_prize:
+    prize_of_seventh_prize:
+
