@@ -1,6 +1,6 @@
-simloto7:
-  ros2__parameters:
-    num_of_trials: 10000
+/simloto7:
+  ros__parameters:
+    num_of_trials: 100000
     price: 300
     total_num: 10295472
     num_of_first_prize: 1
@@ -20,5 +20,4 @@ simloto7:
     prize_money_of_sixth: 1000
     prize_money_of_seventh: 0
     prize_money_of_eighth: 0
-    prize_moneyof_ninth: 0
-
+    prize_money_of_ninth: 0
