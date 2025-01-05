@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 from glob import glob
 
-package_name = 'mypkg'
+package_name = 'simloto7'
 
 setup(
     name=package_name,
@@ -19,7 +19,7 @@ setup(
     zip_safe=True,
     maintainer='Itsuki Terasawa',
     maintainer_email='s21c1083jp@s.chibakoudai.jp',
-    description='a package for practice',
+    description='simulator of loto7',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={

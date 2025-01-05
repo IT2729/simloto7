@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>mypkg</name>
+  <name>simloto7</name>
   <version>0.0.0</version>
-  <description>a package for practice</description>
+  <description>simulator of loto7</description>
   <maintainer email="s21c1083jp@s.chibakoudai.jp">Itsuki Terasawa</maintainer>
   <license>BSD-3-Clause</license>
   <exec_depend>rclpy</exec_depend>
