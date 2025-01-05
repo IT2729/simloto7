@@ -20,13 +20,13 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
     - LOTO7シミュレート結果
 
 #### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/config/params.yaml">Parameters</a>
-<table width="500">
+<table width="1500">
   <thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Description</th>
-      <th scope="col">Type</th>
-      <th scope="col">Default</th>
+      <th scope="col" width="30%">Name</th>
+      <th scope="col" width="40%">>Description</th>
+      <th scope="col" width="10%">Type</th>
+      <th scope="col" width="20%">Default</th>
     </tr>
   </thead>
   </tbody>
@@ -151,10 +151,10 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
       <td>0</td>
     </tr>
     <tr>
-      <td width="30%">prize_money_of_ninth</td>
-      <td width="40%">9等当選金額</td>
-      <td width="10%">int</td>
-      <td width="20%">0</td>
+      <td>prize_money_of_ninth</td>
+      <td>9等当選金額</td>
+      <td>int</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
