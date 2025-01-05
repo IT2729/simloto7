@@ -28,6 +28,7 @@ out=$(sed -n 5p /tmp/mypkg.log | awk '{print $5}')
 # 出力内容確認2(test3)
 t_num=3
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $6}')
+total_cost=$(echo ${out%円,})
 [ "${out}" = "3000000円," ] || error
 
 # 出力内容確認3(test4)
@@ -88,6 +89,10 @@ t_num=13
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $16}')
 out=$(echo ${out} | grep '回')
 [ "${out}" = "" ] && error
+
+# 出力内容確認13(test14)
+t_num=14
+[ "${earnings_and_expenses}" = "$((earnings - total_cost))" ] || error
 
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
