@@ -68,32 +68,32 @@ class SimLoto7(Node):
         
         for i in range(self.num_of_trials):
             self.n = rng.integers(self.total_num)
-            if 0 <= self.n <= self.num_of_first_prize - 1:
+            if 0 <= self.n < self.num_of_first_prize:
                 self.earnings += self.prize_money_of_first
                 self.num_of_first_prize_winnings += 1
 
-            elif self.num_of_first_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize - 1:
+            elif self.num_of_first_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize:
                 self.earnings += self.prize_money_of_second
 
-            elif self.num_of_first_prize + self.num_of_second_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize:
                 self.earnings += self.prize_money_of_third
 
-            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize:
                 self.earnings += self.prize_money_of_fourth
 
-            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize:
                 self.earnings += self.prize_money_of_fifth
 
-            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize:
                 self.earnings += self.prize_money_of_sixth
 
-            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize:
                 self.earnings += self.prize_money_of_seventh
 
-            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize + self.num_of_eighth_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize + self.num_of_eighth_prize:
                 self.earnings += self.prize_money_of_eighth
 
-            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize + self.num_of_eighth_prize - 1 < self.n <= self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize + self.num_of_eighth_prize + self.num_of_ninth_prize - 1:
+            elif self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize + self.num_of_eighth_prize <= self.n < self.num_of_first_prize + self.num_of_second_prize + self.num_of_third_prize + self.num_of_fourth_prize + self.num_of_fifth_prize + self.num_of_sixth_prize + self.num_of_seventh_prize + self.num_of_eighth_prize + self.num_of_ninth_prize:
                 self.earnings += self.prize_money_of_ninth
                 
         self.total_cost += self.price * self.num_of_trials
