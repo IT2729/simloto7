@@ -92,5 +92,9 @@ data: '購入金額: 30000000円, 購入口数: 100000枚, 当選金額: 5245100
 | For testing | Ubuntu 22.04 | Python   | 3.12              | v4                | <a href="https://github.com.IT2729/simloto7_ros2/blob/main/test/test.bash">test.bash</a> |
 
 ## License
+- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
+- このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです.
+    - <a href="https://github.com/ryuichiueda/my_slide/tree/master/robosys2024">ryuichiueda/my_slide robosys2024</a>
 
-# Copyright
+## Copyright
+- © 2024 Itsuki Terasawa
