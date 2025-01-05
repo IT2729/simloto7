@@ -78,6 +78,11 @@ recovery_rate=$(echo ${out%％,})
 out=$(echo ${out} | grep '％,')
 [ "${out}" = "" ] && error
 
+# 出力内容確認11(test12)
+t_num=12
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $15}')
+[ "${out}" = "1等当選回数:" ] || error
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
