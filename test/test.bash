@@ -66,6 +66,11 @@ if [ $(($earnings_and_expenses % 100)) != 0 ]; then
 	error
 fi
 
+# 出力内容確認9(test10)
+t_num=10
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $13}')
+[ "${out}" = "回収率:" ] || error
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
