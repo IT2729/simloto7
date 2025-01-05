@@ -20,144 +20,30 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
     - LOTO7シミュレート結果
 
 #### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/config/params.yaml">Parameters</a>
-<table width="1500">
-  <thead>
-    <tr>
-      <th scope="col" width="30%">Name</th>
-      <th scope="col" width="40%">>Description</th>
-      <th scope="col" width="10%">Type</th>
-      <th scope="col" width="20%">Default</th>
-    </tr>
-  </thead>
-  </tbody>
-    <tr>
-      <td>num_of_trials</td>
-      <td>メッセージごとの試行回数</td>
-      <td>int</td>
-      <td>10000</td>
-    </tr>
-    <tr>
-      <td>price</td>
-      <td>一口の価格</td>
-      <td>int</td>
-      <td>300</td>
-    </tr>
-    <tr>
-      <td>total_num</td>
-      <td>全通り買う場合の数</td>
-      <td>int</td>
-      <td>10295472</td>
-    </tr>
-    <tr>
-      <td>num_of_first_prize</td>
-      <td>1等が当選する場合の数</td>
-      <td>int</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>num_of_second_prize</td>
-      <td>2等が当選する場合の数</td>
-      <td>int</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <td>num_of_third_prize</td>
-      <td>3等が当選する場合の数</td>
-      <td>int</td>
-      <td>196</td>
-    </tr>
-    <tr>
-      <td>num_of_fourth_prize</td>
-      <td>4等が当選する場合の数</td>
-      <td>int</td>
-      <td>9135</td>
-    </tr>
-    <tr>
-      <td>num_of_fifth_prize</td>
-      <td>5等が当選する場合の数</td>
-      <td>int</td>
-      <td>142100</td>
-    </tr>
-    <tr>
-      <td>num_of_sixth_prize</td>
-      <td>6等が当選する場合の数</td>
-      <td>int</td>
-      <td>242550</td>
-    </tr>
-    <tr>
-      <td>num_of_seventh_prize</td>
-      <td>7等が当選する場合の数</td>
-      <td>int</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>num_of_eighth_prize</td>
-      <td>8等が当選する場合の数</td>
-      <td>int</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>num_of_ninth_prize</td>
-      <td>9等が当選する場合の数</td>
-      <td>int</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_first</td>
-      <td>1等当選金額</td>
-      <td>int</td>
-      <td>600000000</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_second</td>
-      <td>2等当選金額</td>
-      <td>int</td>
-      <td>7300000</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_third</td>
-      <td>3等当選金額</td>
-      <td>int</td>
-      <td>730000</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_fourth</td>
-      <td>4等当選金額</td>
-      <td>int</td>
-      <td>9100</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_fifth</td>
-      <td>5等当選金額</td>
-      <td>int</td>
-      <td>1400</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_sixth</td>
-      <td>6等当選金額</td>
-      <td>int</td>
-      <td>1000</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_seventh</td>
-      <td>7等当選金額</td>
-      <td>int</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_eighth</td>
-      <td>8等当選金額</td>
-      <td>int</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>prize_money_of_ninth</td>
-      <td>9等当選金額</td>
-      <td>int</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
+
+|Name                      | Description              | Type  | Default   |
+|--------------------------|--------------------------|-------|-----------|
+| 'num_of_trials'          | メッセージごとの試行回数 | 'int' | 10000     |
+| 'price'                  | 一口の価格               | 'int' | 300       |
+| 'total_num'              | 全通り買う場合の数       | 'int' | 10295472  |
+| 'num_of_first_prize'     | 1等が当選する場合の数    | 'int' | 1         |
+| 'num_of_second_prize'    | 2等が当選する場合の数    | 'int' | 14        |
+| 'num_of_third_prize'     | 3等が当選する場合の数    | 'int' | 196       |
+| 'num_of_fourth_prize'    | 4等が当選する場合の数    | 'int' | 9135      |
+| 'num_of_fifth_prize'     | 5等が当選する場合の数    | 'int' | 142100    |
+| 'num_of_sixth_prize'     | 6等が当選する場合の数    | 'int' | 242550    |
+| 'num_of_seventh_prize'   | 7等が当選する場合の数    | 'int' | 0         |
+| 'num_of_eighth_prize'    | 8等が当選する場合の数    | 'int' | 0         |
+| 'num_of_ninth_prize'     | 9等が当選する場合の数    | 'int' | 0         |
+| 'prize_money_of_first'   | 1等当選金額              | 'int' | 600000000 |
+| 'prize_money_of_second'  | 2等当選金額              | 'int' | 7300000   |
+| 'prize_money_of_third'   | 3等当選金額              | 'int' | 730000    |
+| 'prize_money_of_fourth'  | 4等当選金額              | 'int' | 9100      |
+| 'prize_money_of_fifth'   | 5等当選金額              | 'int' | 1400      |
+| 'prize_money_of_sixth'   | 6等当選金額              | 'int' | 1000      |
+| 'prize_money_of_seventh' | 7等当選金額              | 'int' | 0         |
+| 'prize_money_of_eighth'  | 8等当選金額              | 'int' | 0         |
+| 'prize_money_of_ninth'   | 9等当選金額              | 'int' | 0         |
 
 ### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/simloto7/test_subscriber.py">test_subscriber</a>
 テスト用ノード
