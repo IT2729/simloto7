@@ -102,7 +102,7 @@ class SimLoto7(Node):
         self.recovery_rate = round(float(self.earnings / self.total_cost * 100), 2)
 
         msg = String()
-        msg.data = "購入金額: " + str(self.total_cost) + "円, 購入口数: " + str(self.total_num_of_trials) + "枚, 当選金額: " + str(self.earnings) + "円, 収支: " + str(self.earnings_and_expenses) + "円, 回収率: " + str(self.recovery_rate) + "%, 1等当選回数: " + str(self.num_of_first_prize_winnings) + "回"
+        msg.data = "購入金額: " + str(self.total_cost) + "円, 購入口数: " + str(self.total_num_of_trials) + "枚, 当選金額: " + str(self.earnings) + "円, 収支: " + str(self.earnings_and_expenses) + "円, 回収率: " + str(self.recovery_rate) + "％, 1等当選回数: " + str(self.num_of_first_prize_winnings) + "回"
         self.pub.publish(msg)
 
 
