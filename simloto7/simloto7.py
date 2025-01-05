@@ -33,7 +33,17 @@ class SimLoto7(Node):
         self.declare_parameter('prize_money_of_seventh', 0)
         self.declare_parameter('prize_money_of_eighth', 0)
         self.declare_parameter('prize_money_of_ninth', 0)
+        self.n = 0
+        self.total_cost = 0
+        self.total_num_of_trials = 0
+        self.earnings = 0
+        self.earnings_and_expenses = 0
+        self.recovery_rate = 0
+        self.num_of_first_prize_winnings = 0
 
+        self.create_timer(1.0, self.cb)
+
+    def cb(self):
         self.num_of_trials = self.get_parameter('num_of_trials').get_parameter_value().integer_value
         self.price = self.get_parameter('price').get_parameter_value().integer_value
         self.total_num = self.get_parameter('total_num').get_parameter_value().integer_value
@@ -55,17 +65,7 @@ class SimLoto7(Node):
         self.prize_money_of_seventh = self.get_parameter('prize_money_of_seventh').get_parameter_value().integer_value
         self.prize_money_of_eighth = self.get_parameter('prize_money_of_eighth').get_parameter_value().integer_value
         self.prize_money_of_ninth = self.get_parameter('prize_money_of_ninth').get_parameter_value().integer_value
-        self.n = 0
-        self.total_cost = 0
-        self.total_num_of_trials = 0
-        self.earnings = 0
-        self.earnings_and_expenses = 0
-        self.recovery_rate = 0
-        self.num_of_first_prize_winnings = 0
-
-        self.create_timer(1.0, self.cb)
-
-    def cb(self):
+        
         for i in range(self.num_of_trials):
             self.n = rng.integers(self.total_num)
             if 0 <= self.n <= self.num_of_first_prize - 1:
