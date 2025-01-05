@@ -20,7 +20,7 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
     - LOTO7シミュレート結果
 
 #### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/config/params.yaml">Parameters</a>
-<table width="800">
+<table width="1000">
   <thead>
     <tr>
       <th scope="col">Name</th>
