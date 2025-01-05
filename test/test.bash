@@ -40,6 +40,11 @@ t_num=5
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $8}')
 [ "${out}" = "10000枚," ] || error
 
+# 出力内容確認4(test6)
+t_num=6
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $9}')
+[ "${out}" = "当選金額:" ] || error
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
