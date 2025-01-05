@@ -15,6 +15,6 @@ jobs:
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/simloto7/
-          pip install numpy
+          pipx install numpy
           cd /root/ros2_ws
           bash -xv ./src/simloto7/test/test.bash /root
