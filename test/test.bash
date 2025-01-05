@@ -83,6 +83,12 @@ t_num=12
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $15}')
 [ "${out}" = "1等当選回数:" ] || error
 
+# 出力内容確認12(test13)
+t_num=13
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $16}')
+out=$(echo ${out} | grep '回')
+[ "${out}" = "" ] && error
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
