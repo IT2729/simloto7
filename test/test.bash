@@ -53,6 +53,19 @@ if [ $(($earnings % 100)) != 0 ]; then
 	error
 fi
 
+# 出力内容確認7(test8)
+t_num=8
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $11}')
+[ "${out}" = "収支:" ] || error
+
+# 出力内容確認8(test9)
+t_num=9
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $12}')
+earnings_and_expenses=$(echo ${out%円,})
+if [ $(($earnings_and_expenses % 100)) != 0 ]; then
+	error
+fi
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
