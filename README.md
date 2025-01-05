@@ -31,10 +31,10 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
   </thead>
   </tbody>
     <tr>
-      <td width="30%">num_of_trials</td>
-      <td width="40%">メッセージごとの試行回数</td>
-      <td width="10%">int</td>
-      <td width="20%">10000</td>
+      <td>num_of_trials</td>
+      <td>メッセージごとの試行回数</td>
+      <td>int</td>
+      <td>10000</td>
     </tr>
     <tr>
       <td>price</td>
@@ -151,10 +151,10 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
       <td>0</td>
     </tr>
     <tr>
-      <td>prize_money_of_ninth</td>
-      <td>9等当選金額</td>
-      <td>int</td>
-      <td>0</td>
+      <td width="30%">prize_money_of_ninth</td>
+      <td width="40%">9等当選金額</td>
+      <td width="10%">int</td>
+      <td width="20%">0</td>
     </tr>
   </tbody>
 </table>
