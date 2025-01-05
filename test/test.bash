@@ -25,6 +25,11 @@ t_num=2
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $5}')
 [ "${out}" = "購入金額:" ] || error
 
+# 出力内容確認2(test3)
+t_num=3
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $6}')
+[ "${out}" = "3000000円," ] || error
+
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
 
