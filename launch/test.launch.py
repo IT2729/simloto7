@@ -6,13 +6,13 @@ import launch_ros.actions
 
 def generate_launch_description():
     simloto7 = launch_ros.actions.Node(
-            package='mypkg',      #パッケージの名前を指定
-            executable='simloto7',  #実行するファイルの指定
+            package='simloto7',
+            executable='simloto7',
             )
-    result = launch_ros.actions.Node(
-            package='mypkg',
-            executable='result',
-            output='screen'        #ログを端末に出すための設定
+    test_subscriber = launch_ros.actions.Node(
+            package='simloto7',
+            executable='test_subscriber',
+            output='screen'
             )
 
-    return launch.LaunchDescription([simloto7, result]) 
+    return launch.LaunchDescription([simloto7, test_subscriber]) 
