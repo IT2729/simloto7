@@ -40,10 +40,18 @@ t_num=5
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $8}')
 [ "${out}" = "10000枚," ] || error
 
-# 出力内容確認4(test6)
+# 出力内容確認5(test6)
 t_num=6
 out=$(sed -n 5p /tmp/mypkg.log | awk '{print $9}')
 [ "${out}" = "当選金額:" ] || error
+
+# 出力内容確認6(test7)
+t_num=7
+out=$(sed -n 5p /tmp/mypkg.log | awk '{print $10}')
+earnings=$(echo ${out%円,})
+if [ $(($earnings % 100)) != 0 ]; then
+	error
+fi
 
 # エラーがなければOKを表示
 [ "${res}" = 0 ] && echo OK
