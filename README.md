@@ -46,9 +46,20 @@ LOTO7を指定された回数分シミュレートして結果をパブリッシ
 | prize_money_of_ninth   | 9等当選金額              | int  | 0         |
 
 ### <a href="https://github.com/IT2729/simloto7_ros2/blob/main/simloto7/test_subscriber.py">test_subscriber</a>
-テスト用ノード
+テスト用ノードです。
 
 ## Usage
+以下を入力することで実行できます。
+```
+ros2 run simloto7 simloto7
+```
+
+また実行内容は別ターミナルで以下を入力することで確認できます。
+```
+ros2 topic echo /loto7
+```
+
+- Usage Example
 
 ## About Github Actions
 
