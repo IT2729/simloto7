@@ -89,7 +89,7 @@ data: '購入金額: 30000000円, 購入口数: 100000枚, 当選金額: 5245100
 
 | Purrose     | OS           | Language | Language Ver.     | Checkout Ver.     | Program   |
 |-------------|--------------|----------|-------------------|-------------------|-----------|
-| For testing | Ubuntu 22.04 | Python   | 3.12              | v4                | <a href="https://github.com.IT2729/simloto7_ros2/blob/main/test/test.bash">test.bash</a> |
+| For testing | Ubuntu 22.04 | Python   | 3.12              | v4                | <a href="https://github.com/IT2729/simloto7_ros2/blob/main/test/test.bash">test.bash</a> |
 
 ## License
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
