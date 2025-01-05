@@ -3,10 +3,10 @@ from rclpy.node import Node
 from std_msgs.msg import String
 
 
-class Result(Node):
+class Test_Subscriber(Node):
     def __init__(self):
-        super().__init__("result")
-        self.pub = self.create_subscription(String, "simloto7", self.cb, 10)
+        super().__init__("test_subscriber")
+        self.pub = self.create_subscription(String, "loto7", self.cb, 10)
         
     def cb(self, msg):
         self.get_logger().info(msg.data)
@@ -14,6 +14,6 @@ class Result(Node):
 
 def main():
     rclpy.init()
-    node = Result()
+    node = Test_Subscriber()
     rclpy.spin(node)
 

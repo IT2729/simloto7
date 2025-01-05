@@ -10,7 +10,7 @@ rng = np.random.default_rng()
 class SimLoto7(Node):
     def __init__(self):
         super().__init__("simloto7")
-        self.pub = self.create_publisher(String, "simloto7", 10)
+        self.pub = self.create_publisher(String, "loto7", 10)
 
         self.declare_parameter('num_of_trials', 10000)
         self.declare_parameter('price', 300)
