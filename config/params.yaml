@@ -1,6 +1,6 @@
 /simloto7:
   ros__parameters:
-    num_of_trials: 100000
+    num_of_trials: 10000
     price: 300
     total_num: 10295472
     num_of_first_prize: 1
