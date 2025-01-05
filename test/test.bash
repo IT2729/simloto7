@@ -96,8 +96,8 @@ t_num=14
 
 # 出力内容確認14(test15)
 t_num=15
-out=$(awk "BEGIN {print $earnings / $total_cost * 10000 + 0.5}" | awk '{printf("%d\n", $1)}')
-out=$(awk "BEGIN {print $out / (10 ** 2)}")
+out=$(awk "BEGIN {print $earnings / $total_cost * 100" | awk '{printf("%d\n", $1 * 100 + 0.5)}')
+out=$(awk "BEGIN {print $out / 100}")
 [ "${out}" = "${recovery_rate}" ] || error
 
 # エラーがなければOKを表示
