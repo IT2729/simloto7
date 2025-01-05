@@ -4,18 +4,14 @@ jobs:
   test:
     runs-on: ubuntu-22.04
     container: ryuichiueda/ubuntu22.04-ros2:latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          architecture: 'x64'
+    strategy:
+      matrix:
+        python-version: ["3.12"]
 
+    steps:
       - name: build and test
         run: |
           rsync -av ./ /root/ros2_ws/src/simloto7/
-          sudo apt install pipx
-          pipx install numpy
+          pip install numpy
           cd /root/ros2_ws
           bash -xv ./src/simloto7/test/test.bash /root
