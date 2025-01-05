@@ -24,10 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
-            'simloto7 = mypkg.simloto7:main',
-            'result = mypkg.result:main',
+            'simloto7 = simloto7.simloto7:main',
+            'test_subscriber = simloto7.test_subscriber:main',
         ],
     },
 )
