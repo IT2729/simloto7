@@ -12,13 +12,13 @@ simloto7:
     num_of_seventh_prize: 0
     num_of_eighth_prize: 0
     num_of_ninth_prize: 0
-    prize_of_first_prize: 600000000
-    prize_of_second_prize: 7300000
-    prize_of_third_prize: 730000
-    prize_of_fourth_prize: 9100
-    prize_of_fifth_prize: 1400
-    prize_of_sixth_prize: 1000
-    prize_of_seventh_prize: 0
-    prize_of_eighth_prize: 0
-    prize_of_ninth_prize: 0
+    prize_money_of_first: 600000000
+    prize_money_of_second: 7300000
+    prize_money_of_third: 730000
+    prize_money_of_fourth: 9100
+    prize_money_of_fifth: 1400
+    prize_money_of_sixth: 1000
+    prize_money_of_seventh: 0
+    prize_money_of_eighth: 0
+    prize_moneyof_ninth: 0
 
