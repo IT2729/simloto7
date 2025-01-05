@@ -85,6 +85,10 @@ data: '購入金額: 30000000円, 購入口数: 100000枚, 当選金額: 5245100
 ```
 
 ## About Github Actions
+|             |              |          | Language | Checkout | Running   |
+| Purrose     | OS           | Language | Ver.     | Ver.     | Program   |
+|-------------|--------------|----------|----------|----------|-----------|
+| For testing | Ubuntu 22.04 | Python   | 3.12     | v4       | <a href="https://github.com.IT2729/simloto7_ros2/blob/main/test/test.bash">test.bash</a> |
 
 ## License
 
