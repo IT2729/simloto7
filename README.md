@@ -97,4 +97,4 @@ data: '購入金額: 30000000円, 購入口数: 100000枚, 当選金額: 5245100
     - <a href="https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024">ryuichiueda/slides_marp robosys2024</a>
 
 ## Copyright
-- © 2024 Itsuki Terasawa
+- © 2025 Itsuki Terasawa

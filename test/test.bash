@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2024 Itsuki Terasawa
+# SPDX-FileCopyrightText: 2025 Itsuki Terasawa
 # SPDX-License-Identifier: BSD-3-Clause
 
 error(){
