@@ -8,7 +8,7 @@
 ## Requirements
 - ROS 2 Humble Hawksbill or ROS 2 Jazzy Jalisco
 - Python 3.12 or later
-- Pythonモジュール
+- Python module
     - NumPy 2.1.3 or later
 
 ## Nodes
