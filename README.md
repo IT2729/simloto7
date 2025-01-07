@@ -1,12 +1,12 @@
 # simloto7
-<a href="https://github.com/IT2729/simloto7_ros2/actions/workflows/test.yml"><img src="https://github.com/IT2729/simloto7_ros2/actions/workflows/test.yml/badge.svg" alt="Test status"></a>
-<a href="https://github.com/IT2729/simloto7_ros2/tree/main?tab=BSD-3-Clause-1-ov-file"><img alt="GitHub License" src="https://img.shields.io/github/license/IT2729/simloto7_ros2"></a>
+<a href="https://github.com/IT2729/simloto7/actions/workflows/test.yml"><img src="https://github.com/IT2729/simloto7/actions/workflows/test.yml/badge.svg" alt="Test status"></a>
+<a href="https://github.com/IT2729/simloto7/tree/main?tab=BSD-3-Clause-1-ov-file"><img alt="GitHub License" src="https://img.shields.io/github/license/IT2729/simloto7"></a>
 
 ## Description
 <a href="https://www.takarakuji-official.jp/kuji/loto/loto7/">LOTO7</a>をシミュレートし、結果をパブリッシュするROS2パッケージです。
 
 ## Requirement
-- ROS 2 Jazzy Jalisco
+- ROS 2 Humble Hawksbill or ROS 2 Jazzy Jalisco
 - Python 3.12 or later
 - Pythonモジュール
     - NumPy 2.1.3 or later
@@ -85,16 +85,14 @@ data: '購入金額: 30000000円, 購入口数: 100000枚, 当選金額: 5245100
 ```
 
 ## About Github Actions
-- <a href="https://github.com/IT2729/simloto7_ros2/blob/main/.github/workflows/test.yml">test</a>
+- <a href="https://github.com/IT2729/simloto7/blob/main/.github/workflows/test.yml">test</a>
 
 | Purrose     | OS           | Language | Language Ver.     | Checkout Ver.     | Program   |
 |-------------|--------------|----------|-------------------|-------------------|-----------|
-| For testing | Ubuntu 22.04 | Python   | 3.12              | v4                | <a href="https://github.com/IT2729/simloto7_ros2/blob/main/test/test.bash">test.bash</a> |
+| For testing | Ubuntu 22.04 | Python   | 3.12              | v4                | <a href="https://github.com/IT2729/simloto7/blob/main/test/test.bash">test.bash</a> |
 
 ## License
-- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-- このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです.
-    - <a href="https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024">ryuichiueda/slides_marp robosys2024</a>
+このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 
 ## Copyright
-- © 2025 Itsuki Terasawa
+© 2025 Itsuki Terasawa
