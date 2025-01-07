@@ -5,7 +5,7 @@
 ## Description
 <a href="https://www.takarakuji-official.jp/kuji/loto/loto7/">LOTO7</a>をシミュレートし、結果をパブリッシュするROS2パッケージです。
 
-## Requirement
+## Requirements
 - ROS 2 Humble Hawksbill or ROS 2 Jazzy Jalisco
 - Python 3.12 or later
 - Pythonモジュール
